@@ -1,5 +1,5 @@
 $mode-color-freebuild:#418D24;
-
+/* global button */
 button{
   outline: none;
   border: none;
@@ -7,6 +7,7 @@ button{
   padding: 0;
 }
 
+/* container for buttons */
 .mode-button-container{
   display: flex;
   flex-direction: row;
@@ -16,6 +17,7 @@ button{
   justify-content: center;
 }
 
+/* button himself */
 .mode-button{
   max-width: fit-content;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -47,6 +49,7 @@ button{
     padding: 25px 35px;
   }
 
+  /* different colors for different modes */
   &.mini .freebuild{
     border-top: 5px solid $mode-color-freebuild;
   }
@@ -54,6 +57,7 @@ button{
   &.big .freebuild .mode-logo-square{
     background-color: $mode-color-freebuild;
   }
+  /* end of colors */
 }
 
 .mode-logo-square{
