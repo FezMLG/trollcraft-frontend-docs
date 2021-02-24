@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
+
 import "@fontsource/montserrat"
 import "@fontsource/open-sans"
 import "@fontsource/lato"
@@ -17,10 +18,8 @@ hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('html', html)
 hljs.registerLanguage('css', css)
 
-
 hljs.highlightAll()
 
-const name = '[Your Name]'
 export const siteTitle = 'TrollCraft Design'
 
 export default function Layout({ children, home }) {
@@ -30,7 +29,8 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <title>{ siteTitle }</title>
       </Head>
-      <main>{children}</main>
+      <div></div>
+      <main className={ styles.content }>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

@@ -20,12 +20,6 @@ W klasie przycisku wpisujemy interesujący nas tryb.
 
 ## Wersja Big
 
-<style>
-
-
-
-</style>
-
 ```html
 <div class="mode-button big">
   <button class="freebuild">
