@@ -1,4 +1,9 @@
 $mode-color-freebuild:#418D24;
+
+$modes: 
+  "freebuild" "#418D24", 
+  "creative" "#885ABC";
+
 /* global button */
 button{
   outline: none;
@@ -6,6 +11,10 @@ button{
   margin: 0;
   padding: 0;
 }
+
+//
+//***MODE_BUTTONS***
+//
 
 /* container for buttons */
 .mode-button-container{
@@ -84,4 +93,82 @@ button{
     -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
   }
+}
+
+//
+//***END-MODE_BUTTONS***
+//
+
+//
+//***BADGES***
+//
+
+.badge{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+
+  padding: 4px 25px;
+  border-radius: 8px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+
+  @each $mode, $color in $modes{
+    &.bg-#{$mode}{
+      background-color: #{$color};
+    }
+  }
+}
+
+//
+//***END-BADGES***
+//
+
+//
+//***BUTTONS***
+//
+
+.button{
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  transition: transform ease-in-out 0.1s;
+
+  &.primary{
+    background: #FFFFFF;
+    color: #000000;
+    border: none;
+  }
+
+  &.secondary{
+    background: #ffffff00;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+  }
+
+  &::after{
+    margin-left: 10px;
+    content: ">";
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25) !important;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  &:active {
+    -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  }
+  
 }
