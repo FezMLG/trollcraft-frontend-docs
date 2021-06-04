@@ -1,52 +1,128 @@
 ---
 id: modes-buttons
-title: Przyciski trybów
+title: Mode Buttons
 layout: docs
 category: components
 ---
 
-## Wersja Mini
+# Mode Buttons
 
-W klasie przycisku wpisujemy interesujący nas tryb.
+>CSS file name: **`styles/buttons.scss`**
 
-```html
-<div class="mode-button mini">
-  <button class="freebuild">
-    <span class="mode-button-name">Freebuild</span>
-  </button>
-</div>
-```
-<div class="mode-button mini">
-  <button class="freebuild"><span class="mode-button-name">Freebuild</span></button>
-</div>
-
-## Wersja Big
+## Mini
 
 ```html
-<div class="mode-button big">
-  <button class="freebuild">
-    <span class="mode-button-name">
-      Freebuild
-    </span>
-    <div class="mode-logo-square">
-      <img><!-- W środku <img> umieszczamy ikonę trybu-->
-    </div>
-  </button>
-</div>
+<button class="gamemode small">
+  <span style="
+  color: #885ABC; 
+  border-color: #885ABC
+  ">Creative</span>
+</button>
 ```
-<div class="mode-button big">
-  <button class="freebuild">
-    <span class="mode-button-name">
-      Freebuild
-    </span>
-    <div class="mode-logo-square">
-      <img>
-    </div>
-  </button>
-</div>
+<button class="gamemode small">
+  <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+</button>
+
+## Icon only
+
+```html
+<button class="gamemode">
+  <img 
+    class="mode-icon" 
+    style="background: #885ABC;" 
+    src="/images/Block_Green_Stained_Glass.png" 
+  />
+</button>
+```
+<button class="gamemode">
+  <img 
+    class="mode-icon" 
+    style="background: #885ABC;" 
+    src="/images/Block_Green_Stained_Glass.png" 
+  />
+</button>
+
+## Big
+
+```html
+<button class="gamemode">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+</button>
+```
+<button class="gamemode">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+</button>
+
+## Mode announcement
+
+```html
+<button class="gamemode flare">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+  <div class="announcement"><span>Już wkrótce</span></div>
+</button>
+```
+<button class="gamemode flare">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+  <div class="announcement"><span>Już wkrótce</span></div>
+</button>
+
+## Mode beta phase
+
+```html
+<button class="gamemode flare">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+  <div class="announcement"><span>Już wkrótce</span></div>
+</button>
+```
+<button class="gamemode flare">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+  <div class="beta"><span>Beta</span></div>
+</button>
 
 
-## Kontener na przyciski
+## Container for small mode
 
 ```css
 .mode-button-container{
@@ -60,55 +136,50 @@ W klasie przycisku wpisujemy interesujący nas tryb.
 ```
 
 ```html
-<div class="mode-button-container">
-  <!-- Dowolony przycisk trybu -->
+<div class="mode-buttons-container">
+  <!-- Dowolony mały przycisk trybu -->
 </div>
 ```
-<div class="mode-button-container">
-  <div class="mode-button mini">
-    <button class="freebuild"><span class="mode-button-name">Freebuild</span></button>
-  </div>
-  <div class="mode-button mini">
-    <button class="creative"><span class="mode-button-name">Creative</span></button>
-  </div>
-  <div class="mode-button mini">
-    <button class="freebuild"><span class="mode-button-name">Freebuild</span></button>
-  </div>
-  <div class="mode-button mini">
-    <button class="freebuild"><span class="mode-button-name">Freebuild</span></button>
-  </div>
+<div class="mode-buttons-container">
+  <button class="gamemode small">
+    <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+  </button>
+  <button class="gamemode small">
+    <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+  </button>
+  <button class="gamemode small">
+    <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+  </button>
+  <button class="gamemode small">
+    <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+  </button>
+  <button class="gamemode small">
+    <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+  </button>
 </div>
 
-## Wybrany przycisk
+## Selected button
 
-Nazwa klasy: **`selected`**
-
->**Uwaga:**
->
->Klasa `selected`, która podswietla wybrany przycisk, musi znajdować się w divie z klasą `mode-button` nad przyciskiem
-
-
+Class name: **`selected`**
 
 ```html
-<div class="mode-button big selected">
-  <button class="freebuild">
-    <span class="mode-button-name">
-      Freebuild
-    </span>
-    <div class="mode-logo-square">
-      <img>
-    </div>
-  </button>
-</div>
+<button class="gamemode small selected">
+  <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+</button>
 ```
 
-<div class="mode-button big selected">
-  <button class="freebuild ">
-    <span class="mode-button-name">
-      Freebuild
-    </span>
-    <div class="mode-logo-square">
-      <img>
-    </div>
-  </button>
-</div>
+<button class="gamemode small selected">
+  <span style="color: #885ABC; border-color: #885ABC">Creative</span>
+</button>
+
+<button class="gamemode flare selected">
+  <div class="big">
+    <span>Creative</span>
+    <img 
+      class="mode-icon" 
+      style="background: #885ABC;" 
+      src="/images/Block_Green_Stained_Glass.png" 
+    />
+  </div>
+  <div class="announcement"><span>Już wkrótce</span></div>
+</button>

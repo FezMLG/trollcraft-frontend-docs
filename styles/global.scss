@@ -76,3 +76,15 @@ h2 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+a, span, p {
+  &.bold {
+    //styleName: text bold;
+    font-family: 'Source Sans Pro';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
