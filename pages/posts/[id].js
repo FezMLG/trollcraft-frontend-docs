@@ -4,7 +4,7 @@ import Head from 'next/head'
 import utilStyles from '../../styles/utils.module.scss'
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const postData = await getPostData( params.id)
   return {
     props: {
       postData
@@ -27,7 +27,6 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

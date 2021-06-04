@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
 import "@fontsource/montserrat"
-import "@fontsource/open-sans"
+import "@fontsource/source-sans-pro"
 import "@fontsource/lato"
 
 import 'highlight.js/styles/vs2015.css'
@@ -25,11 +25,6 @@ export const siteTitle = 'TrollCraft Design'
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <title>{ siteTitle }</title>
-      </Head>
-      <div></div>
       <main className={ styles.content }>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

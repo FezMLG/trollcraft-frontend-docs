@@ -4,19 +4,37 @@ title: Przyciski
 layout: docs
 category: components
 ---
+# Buttons
 
-## Przycisk główny
-
-```html
-<button class="button primary">Przycisk</button>
-```
-
-<button class="button primary">Przycisk</button>
-
-## Przycisk poboczny
+## Primary and secondary action
 
 ```html
-<button class="button secondary">Przycisk</button>
+<button class="standard primary">
+  <span>Text in first button</span>
+</button>
 ```
 
-<button class="button secondary">Przycisk</button>
+<button class="standard primary">
+  <span>Text in first button</span>
+</button>
+
+## Group of buttons
+
+```html
+<div class="buttons-group">
+  <button class="standard secondary">
+    <span>Text in second button</span>
+  </button>
+  <button class="standard primary">
+    <span>Text in first button</span>
+  </button>
+</div>
+```
+<div class="buttons-group">
+  <button class="standard secondary">
+    <span>Text in second button</span>
+  </button>
+  <button class="standard primary">
+    <span>Text in first button</span>
+  </button>
+</div>

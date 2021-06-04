@@ -1,0 +1,46 @@
+@import './global.scss';
+
+.buttons-group{
+  display: flex;
+  flex-direction: row;
+
+  .standard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+button{
+  color: black;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: pointer;
+  background-color: unset;
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'source sans pro';
+  padding: 0;
+  border: none;
+
+  &.standard{
+    padding: 12px 50px;
+    border-radius: 8px;
+
+    &.primary{
+      background-color: $vista-blue;
+    }
+
+    &.secondary{
+      background-color: #ffffff;
+    }
+  }
+}
