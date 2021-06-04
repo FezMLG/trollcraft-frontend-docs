@@ -1,4 +1,4 @@
 # Trollcraft Frontend Documentation
 
-`posts` -> elements
-`styles` -> style for elements
+`posts/` -> elements <br>
+`styles/` -> style for elements
