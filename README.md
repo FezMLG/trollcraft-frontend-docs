@@ -1,1 +1,4 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Trollcraft Frontend Documentation
+
+`posts` -> elements
+`styles` -> style for elements
