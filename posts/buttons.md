@@ -34,6 +34,18 @@ category: components
   <i class="icon back"></i>
 </button>
 
+## Icon button
+
+```html
+<button class="icon primary">
+  <i class="icon back"></i>
+</button>
+```
+
+<button class="icon primary">
+  <i class="icon back"></i>
+</button>
+
 ## Group of buttons
 
 ```html

@@ -66,6 +66,15 @@ category: components
   <span class="info">Wprowadzona wartość jest nieprawidłowa<span>
 </div>
 
+### Input with button
+
+<div class="input-box big">
+  <input type="text" name="ex1" class="wrong" value="Example">
+  <button class="icon primary">
+    <i class="icon back"></i>
+  </button>
+</div>
+
 
 ## Input Group
 

@@ -39,32 +39,70 @@ button {
   transition: all 0.1s ease-in-out;
   border-radius: 8px;
   font-size: 0.9rem;
+  
+
+  // Icon inside button
+  .icon {
+    display: inline-block;
+    height: 24px;
+    margin-right: 10px;
+
+    &.back::after {
+      content: url("../components/icons/navigate_next_black_24dp.svg");
+    }
+  }
+
+  // Primary color
+
+  &.primary {
+    background-color: $vista-blue;
+  }
+
+  // **--**
+
+  // Secondary color
+
+  &.secondary {
+    background-color: #ffffff00;
+  }
+
+  // **--**
+
+  // Standard size button
 
   &.standard {
     padding: 12px 50px;
     display: flex;
     align-items: center;
     min-height: 48px;
+  }
+
+  // **--**
+
+  // Only icon button
+
+  &.icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    min-width: 48px;
+    aspect-ratio: 1 / 1;
 
     .icon {
       display: inline-block;
       height: 24px;
-      margin-right: 10px;
+      margin-right: 0px !important;
 
       &.back::after {
         content: url("../components/icons/navigate_next_black_24dp.svg");
       }
     }
-
-    &.primary {
-      background-color: $vista-blue;
-    }
-
-    &.secondary {
-      background-color: #ffffff00;
-    }
-
   }
+
+  // **--**
+
+  // Social media button
 
   &.social {
 
@@ -116,6 +154,8 @@ button {
       } 
     }
   }
+
+  // **--**
 
   &:hover {
     box-shadow: 0px 2px 2px 0px #00000040;
