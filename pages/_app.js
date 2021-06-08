@@ -8,6 +8,7 @@ Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 import '../styles/buttons.scss'
+import '../styles/forms.scss'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
