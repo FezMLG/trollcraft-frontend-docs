@@ -15,8 +15,14 @@ body{
 }
 
 a {
-  color: $woodland;
+  color: #0070f3;
   text-decoration: none;
+
+  &.yes {
+    text-decoration: underline;
+    color: $woodland;
+
+  }
 }
 
 a:hover {

@@ -74,7 +74,7 @@ Normal text bold
 Link
 ------
 ```html
-<a>The quick brown fox jumps over the lazy dog.</a>
+<a class="underline">The quick brown fox jumps over the lazy dog.</a>
 ```
 
-<a>The quick brown fox jumps over the lazy dog.</a>
+<a class="underline">The quick brown fox jumps over the lazy dog.</a>
