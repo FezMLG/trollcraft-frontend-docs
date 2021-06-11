@@ -1,0 +1,71 @@
+@import '../styles/global.scss';
+
+.product-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+.product {
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px 20px;
+  display: grid;
+  grid-gap: 10px;
+  height: 220px;
+  width: 300px;
+
+  .product-image-box {
+    width: 80px;
+    height: 80px;
+    justify-self: center;
+
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .product-name-box {
+    display: flex;
+    flex-direction: column;
+
+    .gamemode {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+
+    .name {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .product-buy-box {
+    display: flex;
+    justify-content: space-between;
+
+    .price {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+
+      color: #000000;
+    }
+
+    button:hover {
+      background: #3D5627;
+      border: 1px solid #3D5627;
+      color: white;
+    }
+  }
+}

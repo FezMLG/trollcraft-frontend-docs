@@ -77,6 +77,11 @@ button {
     min-height: 48px;
   }
 
+  &.choose {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+
   // **--**
 
   // Only icon button
@@ -98,6 +103,24 @@ button {
         content: url("../components/icons/navigate_next_black_24dp.svg");
       }
     }
+  }
+
+  // **--**
+
+  // Smol button
+
+  &.small {
+    padding: 0px 20px;
+    border: 1px solid #3D5627;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000000;
+
   }
 
   // **--**

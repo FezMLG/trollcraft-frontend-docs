@@ -10,7 +10,7 @@ category: components
 >CSS file name: **`styles/forms.scss`**
 
 
-## Simple imput
+## Simple input
 
 ### Big - 350px
 
@@ -68,8 +68,17 @@ category: components
 
 ### Input with button
 
-<div class="input-box big">
-  <input type="text" name="ex1" class="wrong" value="Example">
+```html
+<div class="input-box big with-button">
+  <input type="text" name="ex1" value="Example">
+  <button class="icon primary">
+    <i class="icon back"></i>
+  </button>
+</div>
+```
+
+<div class="input-box big with-button">
+  <input type="text" name="ex1" value="Example">
   <button class="icon primary">
     <i class="icon back"></i>
   </button>
@@ -135,4 +144,19 @@ category: components
     <label for="ex1">Medium</label>
     <input type="text" name="ex1" class="" value="Example">
   </div>
+</div>
+
+## Choose between
+
+```html
+<div class="buttons-group">
+  <button class="standard choose selected">Opcja 1</button>
+  <button class="standard choose">Opcja 2</button>
+  <button class="standard choose">Opcja 3</button>
+</div>
+```
+<div class="buttons-group">
+  <button class="standard choose selected">Opcja 1</button>
+  <button class="standard choose">Opcja 2</button>
+  <button class="standard choose">Opcja 3</button>
 </div>

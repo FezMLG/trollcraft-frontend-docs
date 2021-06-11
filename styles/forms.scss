@@ -61,6 +61,28 @@ input {
     font-size: 0.8rem;
   }
 
+  &.with-button {
+    flex-direction: row;
+    align-items: stretch;
+    height: 50px;
+
+    input {
+      border-radius: 8px 0px 0px 8px !important;
+      border-right: none;
+    }
+
+    button {
+      border-radius: 0px 8px 8px 0px !important;
+
+      &:hover {
+        box-shadow: 0px 0px 4px 0px #00000040 !important;
+        top: 0px !important;
+        position: relative !important;
+      }
+      
+    }
+  }
+
 }
 
 .input-container { 
