@@ -70,3 +70,11 @@ Normal text bold
 ```
 
 <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+
+Link
+------
+```html
+<a>The quick brown fox jumps over the lazy dog.</a>
+```
+
+<a>The quick brown fox jumps over the lazy dog.</a>
