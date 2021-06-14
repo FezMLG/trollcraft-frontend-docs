@@ -34,7 +34,7 @@ category: components
   />
 </button>
 ```
-<button class="gamemode">
+<button class="gamemode" data-tooltip="Creative">
   <img 
     class="mode-icon" 
     style="background: #885ABC;" 
@@ -136,12 +136,12 @@ category: components
 ```
 
 ```html
-<div class="mode-buttons-container">
+<div class="mode-buttons-container choosing">
   <!-- Dowolony mały przycisk trybu -->
 </div>
 ```
-<div class="mode-buttons-container">
-  <button class="gamemode small">
+<div class="mode-buttons-container choosing">
+  <button class="gamemode small selected">
     <span style="color: #885ABC; border-color: #885ABC">Creative</span>
   </button>
   <button class="gamemode small">

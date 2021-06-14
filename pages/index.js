@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h1 className={utilStyles.headingXl}>Dokumentacja</h1>
+        <h1 className={utilStyles.headingXl}>Dokumentacja TrollCraft</h1>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, title, category }) => (
             <li className={utilStyles.listItem} key={id}>

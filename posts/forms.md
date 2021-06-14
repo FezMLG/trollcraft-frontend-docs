@@ -149,14 +149,20 @@ category: components
 ## Choose between
 
 ```html
-<div class="buttons-group">
-  <button class="standard choose selected">Opcja 1</button>
-  <button class="standard choose">Opcja 2</button>
-  <button class="standard choose">Opcja 3</button>
+<div class="buttons-group choosing">
+  <button class="standard selected">Opcja 1</button>
+  <button class="standard">Opcja 2</button>
+  <button class="standard">Opcja 3</button>
 </div>
 ```
-<div class="buttons-group">
-  <button class="standard choose selected">Opcja 1</button>
-  <button class="standard choose">Opcja 2</button>
-  <button class="standard choose">Opcja 3</button>
+<div class="buttons-group choosing">
+  <button class="standard selected">Opcja 1</button>
+  <button class="standard">Opcja 2</button>
+  <button class="standard">Opcja 3</button>
+</div>
+
+<div class="buttons-group choosing">
+  <button class="standard selected">Opcja 1</button>
+  <button class="standard">Opcja 2</button>
+  <button class="standard">Opcja 3</button>
 </div>
