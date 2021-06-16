@@ -12,13 +12,17 @@ import '../styles/buttons.scss'
 import '../styles/forms.scss'
 import '../styles/product.scss'
 import selectButton from '../components/selectButton.js'
-import { useEffect } from 'react';
-import '../styles/nav.scss';
+import navOpen from '../components/navopen.js'
+import { useEffect } from 'react'
+import '../styles/nav.scss'
+import '../components/navopen.js'
+
 
 export default function App({ Component, pageProps }) {
 
   useEffect(() => {
-    selectButton();
+    selectButton()
+    navOpen()
   })
 
   return <Component {...pageProps} />
