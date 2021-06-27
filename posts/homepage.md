@@ -47,5 +47,3 @@ category: page
 </div>
 
 ## Section Layout
-
-div.
