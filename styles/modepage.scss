@@ -6,7 +6,10 @@
   align-items: stretch;
   max-width: 1040px;
   gap: 40px;
-  margin: auto;
+  margin: 0 auto;
+  z-index: 0;
+  grid-row: 1;
+  grid-column: 1;
 
   .mode-card {
     display: flex;
@@ -42,15 +45,16 @@
 
 .moving-background {
   background-image: url(/images/image1.png);
-  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  aspect-ratio: 16/9;
-  position: fixed;
   z-index: -2;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  grid-row: 1;
+  grid-column: 1;
+  position: sticky;
 
   &::before {
     content: "";
@@ -64,3 +68,8 @@
   }
 }
 
+.moving-background-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
