@@ -15,7 +15,10 @@ import selectButton from '../components/selectButton.js'
 import navOpen from '../components/navopen.js'
 import { useEffect } from 'react'
 import '../styles/nav.scss'
+import '../styles/homepage.scss'
 import '../components/navopen.js'
+import '../styles/modepage.scss'
+
 
 
 export default function App({ Component, pageProps }) {
