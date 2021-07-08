@@ -18,6 +18,7 @@ import '../styles/nav.scss'
 import '../styles/homepage.scss'
 import '../components/navopen.js'
 import '../styles/modepage.scss'
+import '../styles/shoppage.scss'
 
 
 

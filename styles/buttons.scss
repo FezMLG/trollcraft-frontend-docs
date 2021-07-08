@@ -102,6 +102,10 @@ button {
       &.back::after {
         content: url("../components/icons/navigate_next_black_24dp.svg");
       }
+
+      &.next::after {
+        content: url("../components/icons/navigate_next_black_24dp.svg");
+      }
     }
   }
 
