@@ -13,12 +13,15 @@ import '../styles/forms.scss'
 import '../styles/product.scss'
 import selectButton from '../components/selectButton.js'
 import navOpen from '../components/navopen.js'
+import addInput from '../components/addInput.js'
 import { useEffect } from 'react'
 import '../styles/nav.scss'
 import '../styles/homepage.scss'
 import '../components/navopen.js'
 import '../styles/modepage.scss'
 import '../styles/shoppage.scss'
+import '../styles/editing.scss'
+
 
 
 
@@ -27,6 +30,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     selectButton()
     navOpen()
+    addInput()
   })
 
   return <Component {...pageProps} />
