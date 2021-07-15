@@ -14,6 +14,7 @@ import '../styles/product.scss'
 import selectButton from '../components/selectButton.js'
 import navOpen from '../components/navopen.js'
 import addInput from '../components/addInput.js'
+import liveEditing from '../components/liveEditing.js'
 import { useEffect } from 'react'
 import '../styles/nav.scss'
 import '../styles/homepage.scss'
@@ -21,6 +22,8 @@ import '../components/navopen.js'
 import '../styles/modepage.scss'
 import '../styles/shoppage.scss'
 import '../styles/editing.scss'
+import '../styles/playerSearching.scss'
+
 
 
 
