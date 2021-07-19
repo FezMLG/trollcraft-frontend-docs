@@ -23,6 +23,8 @@ import '../styles/modepage.scss'
 import '../styles/shoppage.scss'
 import '../styles/editing.scss'
 import '../styles/playerSearching.scss'
+import '../styles/footer.scss'
+
 
 
 
