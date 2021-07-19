@@ -20,6 +20,7 @@ input {
   border: 1px solid #00000080;
   box-sizing: border-box;
   border-radius: 3px;
+  outline: none;
 
   &.wrong {
     border: 1px solid #FF0033;
@@ -63,7 +64,7 @@ input {
 
   &.with-button {
     flex-direction: row;
-    align-items: stretch;
+    align-items: stretch !important;
     height: 50px;
 
     input {

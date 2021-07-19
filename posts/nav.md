@@ -18,8 +18,10 @@ category: components
       <i class="nav-icon icon-nav">AA</i>
     </div>
     <div class="logo-text">
-      <span class="left">Troll</span>
-      <span class="right">Craft</span>
+      <a href="#">
+        <span class="left">Troll</span>
+        <span class="right">Craft</span>
+      </a>
     </div>
     <div>
       <a href=""><i class="nav-icon">AA</i></a>
@@ -28,7 +30,15 @@ category: components
   <!-- NAV -->
   <div class="nav-container">
     <div class="links">
-      <i class=""></i>
+      <div class="dropdown">
+        <i class="icon-nav dropbtn">AA</i>
+        <div class="dropdown-content">
+          <a>Aktualności</a>
+          <a>Sklep</a>
+          <a>Tryby</a>
+          <a>Pomoc</a>
+        </div>
+      </div>
       <div class="mobile-links">
         <a>Aktualności</a>
         <a>Sklep</a>
@@ -36,13 +46,17 @@ category: components
         <a>Pomoc</a>
       </div>
     </div>
-    <div class="logo-text" style="left: -80px;">
-      <span class="left">Troll</span>
-      <span class="right">Craft</span>
+    <div class="desktop logo-text" style="left: -80px;">
+      <a href="#">
+        <span class="left">Troll</span>
+        <span class="right">Craft</span>
+      </a>
     </div>
-    <div class="search">
-      <i class="">ic</i>
-      <input type="text" class="" placeholder="Wyszukaj gracza..."/>
+    <div class="input-box big with-button">
+      <input type="text" name="ex1" placeholder="Wpisz nick...">
+      <button class="icon primary">
+        <i class="icon back"></i>
+      </button>
     </div>
   </div>
 </nav>
