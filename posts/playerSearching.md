@@ -9,6 +9,14 @@ category: page
 
 ## Badges
 
+```html
+<div class="badge-container">
+  <span class="badge moderator">Moderator</span>
+  <span class="badge svip">SVIP</span>
+  <span class="badge normal">Ostatnio widziany 29.04.2021 15:03</span>
+</div>
+```
+
 <div class="badge-container">
   <span class="badge moderator">Moderator</span>
   <span class="badge svip">SVIP</span>
@@ -17,6 +25,18 @@ category: page
 
 ## Banned
 
+```html
+<div class="banned">
+  <div class="">
+    <i class="icon ic-banned">O</i>
+  </div>
+  <h2>Ten gracz ma zakaz wstępu na serwer!</h2>
+  <div class="">
+    <p><span>Zbanowany przez: Profesor_Kation </span><span>/</span><span> Powód bana: Fly, XRay, killaura</span></p>
+    <p><span>Data zbanowania: 14.02.2021 16:03 </span><span>/</span><span> Data wygaśnięcia: Nigdy</span></p>
+  </div>
+</div>
+```
 <div class="banned">
   <div class="">
     <i class="icon ic-banned">O</i>
@@ -29,6 +49,7 @@ category: page
 </div>
 
 ## Tables
+
 <div class="table-container">
   <div class="max-300">
     <div>

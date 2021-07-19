@@ -31,10 +31,8 @@ category: page
 ```html
 <div class="moving-background-container">
   <div class="moving-background"></div>
-  <div class="mode-card-container">
-  </div>
+  <!-- here goes mode card etc. -->
 </div>
-
 ```
 
 <div class="moving-background-container">

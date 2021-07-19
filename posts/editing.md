@@ -9,6 +9,17 @@ category: components
 
 ## Ading inputs
 
+```html
+<div class="savingContainer">
+  <div class="firstSaving" input-number="0">
+    <input type="text" name="ex1" class="input-box big" placeholder="Wpisz komendę" />
+    <button class="icon primary delInput">
+      <i class="icon back"></i>
+    </button>
+  </div>
+</div>
+```
+
 <div class="savingContainer">
   <div class="firstSaving" input-number="0">
     <input type="text" name="ex1" class="input-box big" placeholder="Wpisz komendę" />
@@ -20,5 +31,12 @@ category: components
 
 ## Live input
 
-<input type="text" name="ex1" class="input-box big liveSource" live-id="0" placeholder="Wpisz komendę" />
-<span class="liveView" live-id="0">
+<a href="https://angular.io/guide/user-input">https://angular.io/guide/user-input</a>
+
+```html
+<input type="text" name="ex1" class="input-box big liveSource" placeholder="Wpisz komendę" />
+<span class="liveView">
+```
+
+<input type="text" name="ex1" class="input-box big liveSource" placeholder="Wpisz komendę" />
+<span class="liveView">
